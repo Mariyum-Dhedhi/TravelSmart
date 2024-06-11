@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="io.shiftai.travelsmart.fragments.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_exploreFragment"
+            app:destination="@id/exploreFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_planFragment"
+            app:destination="@id/planFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tripsFragment"
+        android:name="io.shiftai.travelsmart.fragments.home.TripsFragment"
+        android:label="fragment_trips"
+        tools:layout="@layout/fragment_trips" >
+        <action
+            android:id="@+id/action_tripsFragment_to_datesFragment"
+            app:destination="@id/datesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myTripsFragment"
+        android:name="io.shiftai.travelsmart.fragments.home.MyTripsFragment"
+        android:label="fragment_my_trips"
+        tools:layout="@layout/fragment_my_trips" >
+        <action
+            android:id="@+id/action_myTripsFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="io.shiftai.travelsmart.fragments.home.ProfileFragment"
+        android:label="fragment_wallet"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_walletFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/exploreFragment"
+        android:name="io.shiftai.travelsmart.fragments.home.ExploreFragment"
+        android:label="fragment_explore"
+        tools:layout="@layout/fragment_explore" >
+        <action
+            android:id="@+id/action_exploreFragment_to_ramaFragment"
+            app:destination="@id/ramaFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_exploreFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/datesFragment"
+        android:name="io.shiftai.travelsmart.fragments.home.trips.DatesFragment"
+        android:label="DatesFragment"
+        tools:layout="@layout/fragment_dates">
+        <action
+            android:id="@+id/action_datesFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+        <action
+            android:id="@+id/action_datesFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="io.shiftai.travelsmart.fragments.home.trips.CategoryFragment"
+        android:label="CategoryFragment"
+        tools:layout="@layout/fragment_category">
+        <action
+            android:id="@+id/action_categoryFragment_to_datesFragment"
+            app:destination="@id/datesFragment" />
+        <action
+            android:id="@+id/action_categoryFragment_to_finalizeFragment"
+            app:destination="@id/finalizeFragment" />
+        <argument
+            android:name="plan"
+            app:argType="io.shiftai.travelsmart.data.CustomPlan" />
+    </fragment>
+    <fragment
+        android:id="@+id/finalizeFragment"
+        android:name="io.shiftai.travelsmart.fragments.home.trips.FinalizeFragment"
+        android:label="FinalizeFragment"
+        tools:layout="@layout/fragment_finalize">
+        <action
+            android:id="@+id/action_finalizeFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+        <argument
+            android:name="plan"
+            app:argType="io.shiftai.travelsmart.data.CustomPlan" />
+        <action
+            android:id="@+id/action_finalizeFragment_to_genDayDetailsFragment"
+            app:destination="@id/genDayDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ramaFragment"
+        android:name="io.shiftai.travelsmart.fragments.home.explore.RamaFragment"
+        android:label="RamaFragment"
+        tools:layout="@layout/fragment_rama">
+        <action
+            android:id="@+id/action_ramaFragment_to_tombFragment"
+            app:destination="@id/tombFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+        <action
+            android:id="@+id/action_ramaFragment_to_exploreFragment"
+            app:destination="@id/exploreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tombFragment"
+        android:name="io.shiftai.travelsmart.fragments.home.explore.TombFragment"
+        android:label="TombFragment"
+        tools:layout="@layout/fragment_tomb">
+        <action
+            android:id="@+id/action_tombFragment_to_faisalFragment"
+            app:destination="@id/faisalFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+        <action
+            android:id="@+id/action_tombFragment_to_ramaFragment"
+            app:destination="@id/ramaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/faisalFragment"
+        android:name="io.shiftai.travelsmart.fragments.home.explore.FaisalFragment"
+        android:label="FaisalFragment"
+        tools:layout="@layout/fragment_faisal">
+        <action
+            android:id="@+id/action_faisalFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/from_bottom" />
+        <action
+            android:id="@+id/action_faisalFragment_to_tombFragment"
+            app:destination="@id/tombFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/planFragment"
+        android:name="io.shiftai.travelsmart.fragments.home.plan.PlanFragment"
+        android:label="PlanFragment"
+        tools:layout="@layout/fragment_plan">
+        <argument
+            android:name="plan"
+            app:argType="io.shiftai.travelsmart.data.Plan" />
+        <action
+            android:id="@+id/action_planFragment_to_planDetailsFragment"
+            app:destination="@id/planDetailsFragment" />
+        <action
+            android:id="@+id/action_planFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_planFragment_to_weatherFragment"
+            app:destination="@id/weatherFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/planDetailsFragment"
+        android:name="io.shiftai.travelsmart.fragments.home.plan.PlanDetailsFragment"
+        android:label="PlanDetailsFragment"
+        tools:layout="@layout/fragment_plan_details">
+        <argument
+            android:name="plan"
+            app:argType="io.shiftai.travelsmart.data.Plan" />
+        <action
+            android:id="@+id/action_planDetailsFragment_to_dayDetailsFragment"
+            app:destination="@id/dayDetailsFragment" />
+        <action
+            android:id="@+id/action_planDetailsFragment_to_planFragment"
+            app:destination="@id/planFragment" />
+        <action
+            android:id="@+id/action_planDetailsFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dayDetailsFragment"
+        android:name="io.shiftai.travelsmart.fragments.home.plan.DayDetailsFragment"
+        android:label="DayDetailsFragment" >
+        <action
+            android:id="@+id/action_dayDetailsFragment_to_planDetailsFragment"
+            app:destination="@id/planDetailsFragment" />
+        <argument
+            android:name="plan"
+            app:argType="io.shiftai.travelsmart.data.Plan" />
+        <argument
+            android:name="day"
+            app:argType="io.shiftai.travelsmart.data.Day" />
+        <action
+            android:id="@+id/action_dayDetailsFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="io.shiftai.travelsmart.fragments.AboutFragment"
+        android:label="AboutFragment" >
+        <action
+            android:id="@+id/action_aboutFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/weatherFragment"
+        android:name="io.shiftai.travelsmart.fragments.home.plan.WeatherFragment"
+        android:label="WeatherFragment" >
+        <argument
+            android:name="plan"
+            app:argType="io.shiftai.travelsmart.data.Plan" />
+        <action
+            android:id="@+id/action_weatherFragment_to_planFragment"
+            app:destination="@id/planFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/genDayDetailsFragment"
+        android:name="io.shiftai.travelsmart.fragments.home.trips.GenDayDetailsFragment"
+        android:label="GenDayDetailsFragment" >
+        <argument
+            android:name="plan"
+            app:argType="io.shiftai.travelsmart.data.CustomPlan" />
+    </fragment>
+</navigation>

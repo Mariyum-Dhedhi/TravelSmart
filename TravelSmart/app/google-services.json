@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "297193473591",
+    "project_id": "travelsmart-e4937",
+    "storage_bucket": "travelsmart-e4937.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:297193473591:android:94af4c45e1a3df73f761b2",
+        "android_client_info": {
+          "package_name": "io.shiftai.travelsmart"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNDzPghObbb0AfujkPfANN_MPLuL9IfMU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

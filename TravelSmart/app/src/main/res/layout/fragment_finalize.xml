@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/white"
+    >
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/dark_green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/view6">
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:drawableStart="@drawable/ic_back"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/black"
+            android:fontFamily="@font/poppins_bold"
+            android:text="back"
+            android:textAllCaps="true"
+            android:textColor="@color/dark_blue"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:gravity="center"
+            android:text="Summary"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:gravity="left"
+                android:text="Places"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_green_c">
+
+                <TextView
+                    android:id="@+id/destination"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@null"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="left"
+                    android:inputType="text"
+                    android:padding="0dp"
+                    android:text="Karachi, Islamabad"
+                    android:textColor="@color/dark_grey"
+                    android:textColorHint="@color/dark_grey"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:gravity="left"
+                android:text="Start Date"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_green_c">
+
+                <TextView
+                    android:id="@+id/startDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@null"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="left"
+                    android:inputType="text"
+                    android:padding="0dp"
+                    android:text="09-09-24"
+                    android:textColor="@color/dark_grey"
+                    android:textColorHint="@color/dark_grey"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:gravity="left"
+                android:text="End Date"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_green_c">
+
+                <TextView
+                    android:id="@+id/endDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@null"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="left"
+                    android:inputType="text"
+                    android:padding="0dp"
+                    android:text="12-09-24"
+                    android:textColor="@color/dark_grey"
+                    android:textColorHint="@color/dark_grey"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:gravity="left"
+                android:text="Trip Days"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_green_c">
+
+                <TextView
+                    android:id="@+id/daysNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@null"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="left"
+                    android:inputType="text"
+                    android:padding="0dp"
+                    android:text="3"
+                    android:textColor="@color/dark_grey"
+                    android:textColorHint="@color/dark_grey"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:gravity="left"
+                android:text="Activities"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_green_c">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@null"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="left"
+                    android:inputType="text"
+                    android:padding="0dp"
+                    android:text="Food, Adventure"
+                    android:textColor="@color/dark_grey"
+                    android:textColorHint="@color/dark_grey"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/bg_dark_green_c"
+        android:backgroundTint="@color/dark_green"
+        android:fontFamily="@font/manrope_bold"
+        android:text="Finalze Trip"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

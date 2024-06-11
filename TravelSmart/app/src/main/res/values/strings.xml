@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">TravelSmart</string>
+    <string name="st_continue">Continue</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="email_address">Email Address</string>
+    <string name="user_name">User Name</string>
+    <string name="sign_in">Sign in</string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="welcome_back">Welcome back</string>
+    <string name="welcome_slogan">Travel without limits</string>
+    <string name="sign_up">Sign up</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="brand_logo">Brand logo</string>
+    <string name="travel_smart">TRAVELSMART</string>
+    <string name="elevate_your_travel_experience">Elevate your travel experience</string>
+    <string name="let_s_get_started">Let\'s Get Started</string>
+    <string name="next">Next</string>
+    <string name="book_trip">Book Trip</string>
+</resources>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragments.home.ProfileFragment">
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/dark_green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view6"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="10dp">
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:drawableStart="@drawable/ic_back"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/black"
+            android:fontFamily="@font/poppins_bold"
+            android:text="back"
+            android:textAllCaps="true"
+            android:textColor="@color/dark_blue"
+            android:textSize="12sp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="155dp"
+                android:layout_height="155dp"
+                android:layout_marginTop="47.5dp"
+                android:src="@color/dark_green"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageUser"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="50dp"
+                android:src="@color/gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_edit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/imageUser" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:text="Mariyum"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/changePass"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="40dp"-->
+<!--            android:layout_marginRight="40dp"-->
+<!--            android:layout_marginTop="60dp"-->
+<!--            android:background="@color/gray"-->
+<!--            android:drawablePadding="10dp"-->
+<!--            android:fontFamily="@font/poppins_regular"-->
+<!--            android:text="Change Password"-->
+<!--            android:drawableStart="@drawable/ic_lock"-->
+<!--            android:padding="15dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="12sp" />-->
+        <TextView
+            android:id="@+id/logout"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@color/gray"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Log Out"
+            android:drawableStart="@drawable/ic_logout"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@color/gray"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="About TravelSmart"
+            android:drawableStart="@drawable/ic_info"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

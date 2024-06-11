@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/white">
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/dark_green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/view6">
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:drawableStart="@drawable/ic_back"
+            android:drawableTint="@color/black"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="back"
+            android:textAllCaps="true"
+            android:textColor="@color/dark_blue"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:gravity="left"
+            android:text="Which kind of activities do you like?"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="450dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="162dp"
+                        android:layout_height="186dp"
+                        android:background="@drawable/choice"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_semi_bold"
+                            android:gravity="center"
+                            android:text="Food"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toTopOf="@+id/food"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/food"
+                            android:layout_margin="10dp"
+                            android:layout_width="match_parent"
+                            android:background="@drawable/cat_food"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="162dp"
+                        android:layout_height="186dp"
+                        android:background="@drawable/choice"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_semi_bold"
+                            android:gravity="center"
+                            android:text="Nature"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toTopOf="@+id/nature"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/nature"
+                            android:layout_margin="10dp"
+                            android:layout_width="match_parent"
+                            android:background="@drawable/cat_nature"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="162dp"
+                    android:layout_height="186dp"
+                    android:background="@drawable/choice"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:gravity="center"
+                        android:text="Culture"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toTopOf="@+id/culture"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/culture"
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/cat_culture"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="162dp"
+                    android:layout_height="186dp"
+                    android:background="@drawable/choice"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:gravity="center"
+                        android:text="Beach"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toTopOf="@+id/beach"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/beach"
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/cat_beach"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="162dp"
+                        android:layout_height="186dp"
+                        android:background="@drawable/choice"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_semi_bold"
+                            android:gravity="center"
+                            android:text="Adventure"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toTopOf="@+id/adventure"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/adventure"
+                            android:layout_margin="10dp"
+                            android:layout_width="match_parent"
+                            android:background="@drawable/cat_adventure"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="162dp"
+                        android:layout_height="186dp"
+                        android:background="@drawable/choice"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_semi_bold"
+                            android:gravity="center"
+                            android:text="Luxury"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toTopOf="@+id/luxury"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/luxury"
+                            android:layout_margin="10dp"
+                            android:layout_width="match_parent"
+                            android:background="@drawable/cat_luxury"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="162dp"
+                        android:layout_height="186dp"
+                        android:background="@drawable/choice"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_semi_bold"
+                            android:gravity="center"
+                            android:text="Shopping"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toTopOf="@+id/shopping"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/shopping"
+                            android:layout_margin="10dp"
+                            android:layout_width="match_parent"
+                            android:background="@drawable/cat_shopping"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="162dp"
+                        android:layout_height="186dp"
+                        android:background="@drawable/choice"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_semi_bold"
+                            android:gravity="center"
+                            android:text="Art &amp; Music"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toTopOf="@+id/art"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/art"
+                            android:layout_margin="10dp"
+                            android:layout_width="match_parent"
+                            android:background="@drawable/cat_art_music"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/bg_dark_green_c"
+        android:backgroundTint="@color/dark_green"
+        android:fontFamily="@font/manrope_bold"
+        android:text="@string/next"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
