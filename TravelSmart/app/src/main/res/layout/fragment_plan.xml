@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/img_plan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"/>
+
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_back"
+        android:layout_marginTop="20dp"
+        android:drawablePadding="5dp"
+        android:fontFamily="@font/poppins_bold"
+        android:padding="20dp"
+        android:text="back"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:paddingBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/destination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_extra_bold"
+            android:gravity="left"
+            android:letterSpacing="1"
+            android:text="Naran"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_plan"
+            app:layout_constraintEnd_toEndOf="@+id/img_plan" />
+
+        <TextView
+            android:id="@+id/planTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_extra_bold"
+            android:gravity="left"
+            android:letterSpacing="0.1"
+            android:paddingBottom="10dp"
+            android:text="Naran Valley"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_plan"
+            app:layout_constraintEnd_toEndOf="@+id/img_plan" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:gravity="left"
+            android:letterSpacing="0.1"
+            android:maxLines="1"
+            android:text="Discover Pakistan's enchanting North with our Naran
+            Kaghan tour! 3 days of stunning landscapes, serene valleys, and
+            snow-capped mountains await. Join us for an unforgettable journey
+            from Balakot to Naran, where every moment is a photo opportunity.
+            Experience the magic of Kaghan valley with us!"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_plan"
+            app:layout_constraintEnd_toEndOf="@+id/img_plan" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/viewTrip"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_dark_green_c"
+        android:backgroundTint="@color/dark_green"
+        android:fontFamily="@font/manrope_bold"
+        android:text="View Trip"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout3"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="0.75" />
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="320dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <ImageView
+            android:id="@+id/weather"
+            android:layout_width="wrap_content"
+            android:paddingBottom="20dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_weather"/>
+
+        <ImageView
+            android:id="@+id/map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:src="@drawable/ic_map"/>
+
+        <ImageView
+            android:id="@+id/download"
+            android:layout_width="wrap_content"
+            android:paddingBottom="20dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_download"/>
+
+        <ImageView
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_more"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
